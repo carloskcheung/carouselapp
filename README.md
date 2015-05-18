@@ -21,8 +21,8 @@ Completed: Photo tiles move with scrolling
 + Unknown: alertView.dismissWithClickedButtonIndex(0, animated: true) dismisses the loading screen with no buttons.
 + Completed: User sees an error alert when entering the wrong email/password combination.
 + Completed: User is taken to the tutorial screens upon entering the correct email/password combination.
-++ in-complete Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
-++ in-complete Optional: On appear, scale the form up and fade it in.
+* in-complete Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
+* in-complete Optional: On appear, scale the form up and fade it in.
 
 ## Optional: Sign Up
 + Complete: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
@@ -33,8 +33,8 @@ Completed: Photo tiles move with scrolling
 ## Tutorial Screens
 + Complete: User can page between the screens
 + Complete: User can page between the screens with updated dots
-++ in-complete Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
-++ Had some small issues with hiding the page-control on the 4th page.
+* in-complete Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
+* Had some small issues with hiding the page-control on the 4th page.
 
 ## Image Timeline
 + Complete: Display a scrollable view of images.
@@ -48,9 +48,9 @@ Completed: Photo tiles move with scrolling
 ## Learn more about Carousel
 + Complete: Show the "Learn more about Carousel" button in the photo timeline.
 + Complete: Tap the X to dismiss the banner
-++ in-complete Optional: Track the 3 events: View a photo full screen, Swipe left and right, & Share a photo
-++ in-complete Optional: Upon completion of the events, mark them green.
-++ in-complete Optional: When all events are completed, dismiss the banner.
+* in-complete Optional: Track the 3 events: View a photo full screen, Swipe left and right, & Share a photo
+* in-complete Optional: Upon completion of the events, mark them green.
+* in-complete Optional: When all events are completed, dismiss the banner.
 
 
 
