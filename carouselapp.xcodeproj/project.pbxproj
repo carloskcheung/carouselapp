@@ -15,6 +15,7 @@
 		862B61101B0957C4000A6A16 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B610F1B0957C4000A6A16 /* ConversationsViewController.swift */; };
 		862B61121B095A28000A6A16 /* CreateRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B61111B095A28000A6A16 /* CreateRootViewController.swift */; };
 		862B61141B097C31000A6A16 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B61131B097C31000A6A16 /* ForgotPasswordViewController.swift */; };
+		862B61161B09BA82000A6A16 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B61151B09BA82000A6A16 /* LearnMoreViewController.swift */; };
 		863BCC631B05A888007E1841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863BCC621B05A888007E1841 /* AppDelegate.swift */; };
 		863BCC651B05A888007E1841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863BCC641B05A888007E1841 /* ViewController.swift */; };
 		863BCC681B05A888007E1841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863BCC661B05A888007E1841 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		862B610F1B0957C4000A6A16 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		862B61111B095A28000A6A16 /* CreateRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRootViewController.swift; sourceTree = "<group>"; };
 		862B61131B097C31000A6A16 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		862B61151B09BA82000A6A16 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
 		863BCC5D1B05A888007E1841 /* carouselapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carouselapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863BCC611B05A888007E1841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863BCC621B05A888007E1841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				862B610F1B0957C4000A6A16 /* ConversationsViewController.swift */,
 				862B61111B095A28000A6A16 /* CreateRootViewController.swift */,
 				862B61131B097C31000A6A16 /* ForgotPasswordViewController.swift */,
+				862B61151B09BA82000A6A16 /* LearnMoreViewController.swift */,
 			);
 			path = carouselapp;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				862B61061B07B697000A6A16 /* IntroViewController2.swift in Sources */,
 				862B61101B0957C4000A6A16 /* ConversationsViewController.swift in Sources */,
+				862B61161B09BA82000A6A16 /* LearnMoreViewController.swift in Sources */,
 				862B61081B07D260000A6A16 /* TutorialViewController.swift in Sources */,
 				862B61041B07AFEB000A6A16 /* LoginRootViewController.swift in Sources */,
 				863BCC651B05A888007E1841 /* ViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  TimelineViewController.swift
+//  LearnMoreViewController.swift
 //  carouselapp
 //
 //  Created by Carlos Cheung on 5/17/15.
@@ -8,17 +8,10 @@
 
 import UIKit
 
-class TimelineViewController: UIViewController {
+class LearnMoreViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var feedView: UIImageView!
-    @IBOutlet weak var learnMoreView: UIImageView!
-    @IBOutlet weak var exitButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        scrollView.contentSize = CGSize(width: 320, height: 1564)
 
         // Do any additional setup after loading the view.
     }
@@ -28,11 +21,8 @@ class TimelineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func exitMoreViewButton(sender: AnyObject) {
-        
-        exitButton.alpha = 0
-        learnMoreView.alpha = 0
-        
+    @IBAction func exitbutton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     /*

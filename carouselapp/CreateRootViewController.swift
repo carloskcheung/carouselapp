@@ -15,6 +15,10 @@ class CreateRootViewController: UIViewController {
     @IBOutlet weak var createButtonView: UIView!
     @IBOutlet weak var createFormView: UIView!
     
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     
     override func viewDidLoad() {
@@ -87,6 +91,42 @@ class CreateRootViewController: UIViewController {
     //Back Button
     @IBAction func backButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    @IBAction func createAccountButton(sender: AnyObject) {
+    
+        
+        
+        if emailField.text.isEmpty || passwordField.text.isEmpty || firstNameField.text.isEmpty || lastNameField.text.isEmpty {
+            var alertView = UIAlertView(title: "Fill in information", message: "Please be sure to enter your first name, last name, email, and password", delegate: self, cancelButtonTitle: "OK")
+            alertView.show()
+            
+            
+            
+        }
+        else {
+            
+            if emailField.text == "carlos@optimizely.com" && passwordField.text == "password" {
+                println("valid login")
+                
+                // Delay for 2 seconds, then run the code between the braces.
+                delay(2, { () -> () in
+                    self.performSegueWithIdentifier("createSegue", sender: nil)
+                })
+                
+            }
+                
+            else {
+                var alertView = UIAlertView(title: "Invalid", message: "Please try again with a valid email", delegate: self, cancelButtonTitle: "OK")
+                alertView.show()
+                
+                println("invalid login")
+                
+            }
+        }
+        
+        
     }
     
     

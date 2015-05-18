@@ -541,6 +541,16 @@
                                             <action selector="termsButton:" destination="EcP-3Y-rD0" eventType="touchUpInside" id="WLE-uw-KgJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uVX-Fp-S2I">
+                                        <rect key="frame" x="0.0" y="40" width="273" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createAccountButton:" destination="EcP-3Y-rD0" eventType="touchUpInside" id="aGr-w5-f9L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -581,6 +591,11 @@
                         <outlet property="createButtonView" destination="Wd1-ve-9XH" id="qaF-Ma-jyI"/>
                         <outlet property="createFormView" destination="Zp1-gD-0ZT" id="1Hl-By-HfK"/>
                         <outlet property="createTextView" destination="hW4-Is-rWg" id="gRa-UG-ZyD"/>
+                        <outlet property="emailField" destination="ovc-em-llj" id="Esr-2i-5Kj"/>
+                        <outlet property="firstNameField" destination="BLi-pJ-myZ" id="G1R-H8-yZp"/>
+                        <outlet property="lastNameField" destination="OjQ-IL-c2h" id="Hbf-iG-7M6"/>
+                        <outlet property="passwordField" destination="kdU-yb-jU5" id="IM5-Io-ErJ"/>
+                        <segue destination="WKs-WU-4pO" kind="modal" identifier="createSegue" id="Hip-PV-Wu5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTk-bG-K46" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -596,6 +611,43 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="708" y="1460"/>
+        </scene>
+        <!--Learn More View Controller-->
+        <scene sceneID="CgQ-8J-RbY">
+            <objects>
+                <viewController id="6go-ku-HD6" customClass="LearnMoreViewController" customModule="carouselapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kOi-5M-7Q4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="wb2-HF-2oI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="example" id="fyV-nH-2Ag">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qaS-d1-mTe">
+                                        <rect key="frame" x="6" y="24" width="45" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitbutton:" destination="6go-ku-HD6" eventType="touchUpInside" id="y7X-nZ-vnE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvH-1u-3I5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166" y="2678"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L0W-gB-KCu">
@@ -637,6 +689,32 @@
                                         <rect key="frame" x="0.0" y="466" width="320" height="36"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="banner" id="z2a-38-aIG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cst-io-btr">
+                                        <rect key="frame" x="280" y="2" width="40" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitMoreViewButton:" destination="Uoe-SN-OV1" eventType="touchUpInside" id="ZwK-w1-kpM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6nd-Oh-cmN">
+                                        <rect key="frame" x="0.0" y="1" width="272" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6go-ku-HD6" kind="modal" id="G6d-0m-h2q"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p8i-j2-dpd">
@@ -666,7 +744,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="exitButton" destination="cst-io-btr" id="yDf-XB-ZOa"/>
                         <outlet property="feedView" destination="YLK-49-7As" id="UH6-3d-9Hq"/>
+                        <outlet property="learnMoreView" destination="z2a-38-aIG" id="dZd-W9-oQ5"/>
                         <outlet property="scrollView" destination="Xs3-Dd-bMf" id="KPw-fb-60l"/>
                     </connections>
                 </viewController>
@@ -763,6 +843,7 @@
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>
+        <image name="banner" width="319" height="44"/>
         <image name="check_box" width="20" height="20"/>
         <image name="check_box_selected" width="20" height="20"/>
         <image name="conversations" width="320" height="568"/>
@@ -770,6 +851,7 @@
         <image name="create_form" width="320" height="192"/>
         <image name="create_nav" width="320" height="66"/>
         <image name="create_text" width="320" height="63"/>
+        <image name="example" width="640" height="1136"/>
         <image name="feed" width="320" height="1564"/>
         <image name="feed_nav" width="320" height="65"/>
         <image name="forgot_password_nav" width="320" height="66"/>
@@ -802,5 +884,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="GeW-m0-URE"/>
+        <segue reference="Hip-PV-Wu5"/>
     </inferredMetricsTieBreakers>
 </document>

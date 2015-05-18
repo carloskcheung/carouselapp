@@ -18,12 +18,14 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
         scrollView.delegate = self
         
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         
         
-        
+    
         // Do any additional setup after loading the view.
     }
 
@@ -35,7 +37,8 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         pageControl.currentPage = page
-    
+        
+       
         
     }
 
